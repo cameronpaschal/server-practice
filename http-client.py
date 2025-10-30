@@ -14,7 +14,7 @@ mime_type, _ = mimetypes.guess_type(path)
 
 encoder = MultipartEncoder(
     fields={
-        "rel_dir": "images/",
+        "rel_dir": "media/",
         "file": ("video.MP4", open(path, "rb"), mime_type or "application/octet-stream")
     }
 )
