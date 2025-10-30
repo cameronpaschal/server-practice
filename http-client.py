@@ -11,7 +11,7 @@ path = "video.MP4"
 encoder = MultipartEncoder(
     fields={
         "rel_dir": "images/",
-        "file": ("resume.docx", open(path, "rb"), "image/jpeg")
+        "file": ("video.MP4", open(path, "rb"), "video/mp4")
     }
 )
 
